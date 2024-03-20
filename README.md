@@ -3,7 +3,7 @@ Download the .app file and place it in your "applications".  Once you run it onc
 
 If you want the raw code you canl Load the below code into 'script editor' and save it as an application [.app] into your applications folder...you MUST also check the box "Stay open after run handler" before you save it!
 
-
+'''
 use framework "Foundation"
 use scripting additions
 
@@ -17,3 +17,4 @@ on idle
 	end try
 	return 2
 end idle
+'''
