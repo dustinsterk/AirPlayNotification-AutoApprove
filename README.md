@@ -1,9 +1,9 @@
-Download the .app file and place it in your "applications".  Once you run it once, you must enable the script to have permissions under Settings->Privacy & Security->Accessibility to allow it to do the clicking
+Download the .app file and place it in your "applications".  Once you run it once, you must enable the script to have permissions under Settings->Privacy & Security->Accessibility to allow it to do the "clicking".
 
 
-If you want the raw code you canl Load the below code into 'script editor' and save it as an application [.app] into your applications folder...you MUST also check the box "Stay open after run handler" before you save it!
+If you want the raw code you canl Load the below code into 'script editor' and save it as an application [.app] into your applications folder...you MUST also check the box "Stay open after run handler" before you save it!  Don't forget to enable it in Settings as described above.
 
-'''
+```
 use framework "Foundation"
 use scripting additions
 
@@ -17,4 +17,5 @@ on idle
 	end try
 	return 2
 end idle
-'''
+```
+
