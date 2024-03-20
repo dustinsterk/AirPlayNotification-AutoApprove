@@ -1,4 +1,6 @@
-Download the .app file and place it in your "applications".  Once you run it once, you must enable the script to have permissions under **Settings->Privacy & Security->Accessibility** to allow it to do the "clicking".
+This .app / script works with the latest version of MacOS Sonoma and will automatically click the AirPlay notification you get when you try to cast audio to you macbook.  You must also ensure your AirPlay reciever is **Enabled** in Settings as well as Allow Airplay from "**Anyone on the same network**".
+
+Download the .app file and place it in your "Applications" folder in Finder.  Once you run it once, you must enable the script to have permissions under **Settings->Privacy & Security->Accessibility** to allow it to do the "clicking".
 
 
 If you want the raw code you canl Load the below code into 'script editor' and save it as an application [.app] into your applications folder...you MUST also check the box "Stay open after run handler" before you save it!  Don't forget to enable it in Settings as described above.
