@@ -22,3 +22,21 @@ on idle
 end idle
 ```
 
+
+
+***For MacOS Sequoia I have working code, but needs more testing***
+```
+use framework "Foundation"
+use scripting additions
+
+on idle
+	try
+		tell application "System Events" to tell application process "NotificationCenter"
+			try
+				perform (actions of UI elements of UI element 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" of application process "NotificationCenter" of application "System Events" whose name starts with "Name:Accept")
+			end try
+		end tell
+	end try
+	return 2
+end idle
+```
