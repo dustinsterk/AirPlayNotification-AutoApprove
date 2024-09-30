@@ -24,7 +24,7 @@ end idle
 
 
 
-***For MacOS Sequoia I have working code, but needs more testing***
+***For MacOS Sequoia I have working code, but needs more testing.  Use the 'Auto-Approve AirPlay_Sequoia.app' file if you want a drag and drop solution***
 ```
 use framework "Foundation"
 use scripting additions
