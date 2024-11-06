@@ -24,7 +24,7 @@ end idle
 
 
 
-***For MacOS Sequoia I have working code, but needs more testing***
+***For MacOS Sequoia 15.0 I have working code, but needs more testing.  Use the 'Auto-Approve AirPlay_Sequoia.app' file if you want a drag and drop solution***
 ```
 use framework "Foundation"
 use scripting additions
@@ -34,6 +34,23 @@ on idle
 		tell application "System Events" to tell application process "NotificationCenter"
 			try
 				perform (actions of UI elements of UI element 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" of application process "NotificationCenter" of application "System Events" whose name starts with "Name:Accept")
+			end try
+		end tell
+	end try
+	return 2
+end idle
+```
+
+***For MacOS Sequoia 15.1 I have working code, but needs more testing.  Use the 'Auto-Approve AirPlay_Sequoia_15.1.app' file if you want a drag and drop solution***
+```
+use framework "Foundation"
+use scripting additions
+
+on idle
+	try
+		tell application "System Events" to tell application process "NotificationCenter"
+			try
+				perform (action 5 of button 1 of scroll area 1 of group 1 of group 1 of window "Notification Center")
 			end try
 		end tell
 	end try
