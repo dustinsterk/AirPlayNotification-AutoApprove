@@ -50,7 +50,10 @@ on idle
 	try
 		tell application "System Events" to tell application process "NotificationCenter"
 			try
-				perform (action 5 of button 1 of scroll area 1 of group 1 of group 1 of window "Notification Center")
+				-- Apple Script has hidden reading the values of 'AXAttributedDescription' which contains the 'AIRPLAY' title, so count the number of actions in the notification where it has the 'accept' button and then click it which is action 5.
+				if (count (actions of button 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" whose name contains "Name:Accept")) is 1 then
+					perform (action 5 of button 1 of scroll area 1 of group 1 of group 1 of window "Notification Center")
+				end if
 			end try
 		end tell
 	end try
