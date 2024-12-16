@@ -70,7 +70,8 @@ on idle
 	try
 		tell application "System Events" to tell application process "NotificationCenter"
 			try
-				if (count (actions of button 2 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" whose name contains "AXPress")) is 1 then
+				if (value of static text 1 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center") = "AIRPLAY" then
+					--if (count (actions of button 2 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" whose name contains "AXPress")) is 1 then
 					perform (action 2 of button 2 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center")
 				end if
 			end try
