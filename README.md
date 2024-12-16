@@ -60,3 +60,22 @@ on idle
 	return 2
 end idle
 ```
+
+***For MacOS Squoia 15.2, use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution***
+```
+use framework "Foundation"
+use scripting additions
+
+on idle
+	try
+		tell application "System Events" to tell application process "NotificationCenter"
+			try
+				if (count (actions of button 2 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" whose name contains "AXPress")) is 1 then
+					perform (action 2 of button 2 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center")
+				end if
+			end try
+		end tell
+	end try
+	return 2
+end idle
+```
