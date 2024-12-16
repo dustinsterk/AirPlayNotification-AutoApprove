@@ -61,7 +61,7 @@ on idle
 end idle
 ```
 
-***For MacOS Squoia 15.2, use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution***
+***For MacOS Sequoia 15.2, use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution***
 ```
 use framework "Foundation"
 use scripting additions
