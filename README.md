@@ -24,7 +24,7 @@ end idle
 
 
 
-***For MacOS Sequoia 15.0 I have working code, but needs more testing.  Use the 'Auto-Approve AirPlay_Sequoia.app' file if you want a drag and drop solution***
+***For MacOS Sequoia 15.0, use the 'Auto-Approve AirPlay_Sequoia.app' file if you want a drag and drop solution***
 ```
 use framework "Foundation"
 use scripting additions
@@ -41,7 +41,7 @@ on idle
 end idle
 ```
 
-***For MacOS Sequoia 15.1 I have working code, but needs more testing.  Use the 'Auto-Approve AirPlay_Sequoia_15.1.app' file if you want a drag and drop solution***
+***For MacOS Sequoia 15.1, use the 'Auto-Approve AirPlay_Sequoia_15.1.app' file if you want a drag and drop solution***
 ```
 use framework "Foundation"
 use scripting additions
@@ -53,6 +53,25 @@ on idle
 				-- Apple Script has hidden reading the values of 'AXAttributedDescription' which contains the 'AIRPLAY' title, so count the number of actions in the notification where it has the 'accept' button and then click it which is action 5.
 				if (count (actions of button 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" whose name contains "Name:Accept")) is 1 then
 					perform (action 5 of button 1 of scroll area 1 of group 1 of group 1 of window "Notification Center")
+				end if
+			end try
+		end tell
+	end try
+	return 2
+end idle
+```
+
+***For MacOS Sequoia 15.2, use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution***
+```
+use framework "Foundation"
+use scripting additions
+
+on idle
+	try
+		tell application "System Events" to tell application process "NotificationCenter"
+			try
+				if (count (actions of button 2 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center" whose name contains "AXPress")) is 1 then
+					perform (action 2 of button 2 of group 1 of scroll area 1 of group 1 of group 1 of window "Notification Center")
 				end if
 			end try
 		end tell
