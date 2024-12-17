@@ -8,7 +8,7 @@ You can also look at the code (same as below) if you open the downloaded .app fi
 
 
 
-***For MacOS Sonoma 14.7, use the 'Auto-Approve AirPlay_Sequoia.app' file if you want a drag and drop solution***
+***For MacOS Sonoma 14.7, use the 'Auto-Approve AirPlay_Sonoma_14.7.app' file if you want a drag and drop solution***
 ```
 use framework "Foundation"
 use scripting additions
@@ -27,7 +27,7 @@ end idle
 
 
 
-***For MacOS Sequoia 15.0, use the 'Auto-Approve AirPlay_Sequoia.app' file if you want a drag and drop solution***
+***For MacOS Sequoia 15.0, use the 'Auto-Approve AirPlay_Sequoia_15.0.app' file if you want a drag and drop solution***
 ```
 use framework "Foundation"
 use scripting additions
