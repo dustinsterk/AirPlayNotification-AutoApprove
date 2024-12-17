@@ -1,11 +1,10 @@
-This .app / script works with the latest version of MacOS Sequoia and the last Sonoma version and will automatically click the AirPlay notification you get when you try to cast audio to your macbook/device.  You must also ensure your AirPlay receiver is **Enabled** in Settings as well as the setting Allow Airplay from "**Anyone on the same network**".
+This .app / script works with the latest version of MacOS Sequoia (and the last Sonoma version) and will automatically click the AirPlay notification you recieve when you cast audio to your macbook/device.  You must ensure your AirPlay receiver is **Enabled** in System Settings as well as the Allow Airplay setting from "**Anyone on the same network**".
 
-Download the .app file and place it in your "Applications" folder in Finder.  Once you run it once, you must enable the script to have permissions under **Settings->Privacy & Security->Accessibility** to allow it to do the "clicking".
+Download the .app file and place it in your "Applications" folder in Finder.  Once you run it once, you must enable the script to have permissions under **Settings->Privacy & Security->Accessibility** to allow it to do the "clicking" of the notification.  Please note that if you upgrade or change the script in any way, you must remove this app permission and then re-enable it once the script is opened again.
 
-If you want the raw code you can load the below code into "script editor" and save it as an application [.app] into your applications folder...you **MUST** also check the box "Stay open after run handler" before you save it!  Don't forget to enable the permissions in Settings as described above.
+If you do not use the drag and drop solution (.app file provided), you can load the code into "script editor" and save it as an application [.app] into your applications folder...you **MUST** also check the box "Stay open after run handler" before you save it!  Finally, do not forget to enable the permissions in Settings as described above.
 
-You can also look at the code (same as below) if you open the downloaded .app file in the same "script editor" application.  Once it is packaged as an .app it is saved as binary.
-
+You may also review the code (same as below) if you open the downloaded .app file in the "script editor" application.  Once it is packaged as an .app, it is saved as binary and cannot be opend with a simple text editor.
 
 
 ***For MacOS Sonoma 14.7, use the 'Auto-Approve AirPlay_Sonoma_14.7.app' file if you want a drag and drop solution***
