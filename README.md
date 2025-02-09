@@ -6,6 +6,70 @@ If you do not use the drag and drop solution (.app file provided), you can load 
 
 You may also review the code (same as below) if you open the downloaded .app file in the "script editor" application.  Once it is packaged as an .app, it is saved as binary and cannot be opend with a simple text editor.
 
+***For MacOS Monterey 12.5 you can use the following code (shared by Interesting_Worry457 at Reddit) ***
+```
+use framework "Foundation"
+use scripting additions
+on run
+    repeat
+        try
+            tell application "System Events"
+                tell application process "NotificationCenter"
+                    repeat with aGroup in (groups of UI element 1 of scroll area 1 of window "Notification Center")
+                        try
+                            set notifText to value of static text 1 of aGroup
+                            if notifText contains "AirPlay" then
+                                repeat with aButton in (buttons of aGroup)
+                                    if name of aButton is "Accept" then --If your system is in another language, replace "Accept" with the correct translation of the word.
+                                        click aButton
+                                        exit repeat
+                                    end if
+                                end repeat
+                                exit repeat
+                            end if
+                        end try
+                    end repeat
+                end tell
+            end tell
+        end try
+        delay 2
+    end repeat
+end run
+```
+
+***For MacOS Ventura 13.0 you can use the following code (shared by Interesting_Worry457 at Reddit) ***
+```
+use framework "Foundation"
+use scripting additions
+
+on run
+	repeat
+		try
+			tell application "System Events"
+				tell application process "NotificationCenter"
+					if exists (window "Notification Center") then
+						tell window "Notification Center"
+							tell group 1
+								tell scroll area 1
+									tell UI element 1
+										tell group 1
+											if (exists static text "AIRPLAY") then
+												click button 2
+											end if
+										end tell
+									end tell
+								end tell
+							end tell
+						end tell
+					end if
+				end tell
+			end tell
+		end try
+		delay 2
+	end repeat
+end run
+```
+
 
 ***For MacOS Sonoma 14.7, use the 'Auto-Approve AirPlay_Sonoma_14.7.app' file if you want a drag and drop solution***
 ```
