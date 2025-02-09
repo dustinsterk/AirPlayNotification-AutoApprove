@@ -6,7 +6,7 @@ If you do not use the drag and drop solution (.app file provided), you can load 
 
 You may also review the code (same as below) if you open the downloaded .app file in the "script editor" application.  Once it is packaged as an .app, it is saved as binary and cannot be opend with a simple text editor.
 
-***For MacOS Monterey 12.5 you can use the following code (shared by Interesting_Worry457 at Reddit) ***
+**For MacOS Monterey 12.5 you can use the following code (shared by Interesting_Worry457 at Reddit)**
 ```
 use framework "Foundation"
 use scripting additions
@@ -37,7 +37,7 @@ on run
 end run
 ```
 
-***For MacOS Ventura 13.0 you can use the following code (shared by Interesting_Worry457 at Reddit) ***
+**For MacOS Ventura 13.0 you can use the following code (shared by Interesting_Worry457 at Reddit)**
 ```
 use framework "Foundation"
 use scripting additions
