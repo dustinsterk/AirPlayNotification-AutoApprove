@@ -1,4 +1,4 @@
-This .app / script works with the latest version of MacOS Sequoia (and the last Sonoma and older versions) and will automatically click the AirPlay notification you recieve when you cast audio to your macbook/device.  You must ensure your AirPlay receiver is **Enabled** in System Settings as well as the Allow Airplay setting from "**Anyone on the same network**".
+This .app / script works with the latest version of MacOS Tahoe (and the last Sequoia and older versions) and will automatically click the AirPlay notification you recieve when you cast audio to your macbook/device.  You must ensure your AirPlay receiver is **Enabled** in System Settings as well as the Allow Airplay setting from "**Anyone on the same network**".
 
 Download the .app file and place it in your "Applications" folder in Finder.  Once it is executed, you must enable the script to have permissions under **Settings->Privacy & Security->Accessibility** to allow it to do the "clicking" of the notification.  Please note that if you upgrade or change the script in any way, you must remove this permission and then re-enable it once the script is opened again.
 
