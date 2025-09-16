@@ -127,7 +127,7 @@ on idle
 end idle
 ```
 
-***For MacOS Sequoia 15.2, 15.3, 15.5 (24F74), and 15.6 use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution -- both 'if' statement checks below should work but I personally like searching for the "AIRPLAY" title in the notification.***
+***For MacOS Tahoe 26.0, Sequoia 15.2, 15.3, 15.5, 15.6 use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution -- both 'if' statement checks below should work but I personally like searching for the "AIRPLAY" title in the notification.***
 ```
 use framework "Foundation"
 use scripting additions
