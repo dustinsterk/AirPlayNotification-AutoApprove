@@ -1,4 +1,4 @@
-This .app / script works with the latest version of MacOS Tahoe 26.0 (and the last Sequoia and older versions) and will automatically click the AirPlay notification you recieve when you cast audio to your macbook/device.  You must ensure your AirPlay receiver is **Enabled** in System Settings as well as the Allow Airplay setting from "**Anyone on the same network**".
+This .app / script works with the latest version of MacOS Tahoe 26.0.1 (and the last Sequoia and older versions) and will automatically click the AirPlay notification you recieve when you cast audio to your macbook/device.  You must ensure your AirPlay receiver is **Enabled** in System Settings as well as the Allow Airplay setting from "**Anyone on the same network**".
 
 Download the .app file and place it in your "Applications" folder in Finder.  Once it is executed, you must enable the script to have permissions under **Settings->Privacy & Security->Accessibility** to allow it to do the "clicking" of the notification.  Please note that if you upgrade or change the script in any way, you must remove this permission and then re-enable it once the script is opened again.
 
@@ -127,7 +127,7 @@ on idle
 end idle
 ```
 
-***For MacOS Tahoe 26.0, Sequoia 15.2, 15.3, 15.5, 15.6 use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution -- both 'if' statement checks below should work but I personally like searching for the "AIRPLAY" title in the notification.***
+***For MacOS Tahoe 26.0/26.0.1, Sequoia 15.2, 15.3, 15.5, 15.6 use the 'Auto-Approve AirPlay_Sequoia_15.2.app' file if you want to a drag and drop solution -- both 'if' statement checks below should work but I personally like searching for the "AIRPLAY" title in the notification.***
 ```
 use framework "Foundation"
 use scripting additions
